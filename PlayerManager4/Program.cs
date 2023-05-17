@@ -51,7 +51,7 @@ namespace PlayerManager4
             {
                 // Player list is sorted by score
                 playerList.Sort();
-                
+
                 // Show menu and get user option
                 ShowMenu();
                 option = Console.ReadLine();
@@ -185,6 +185,84 @@ namespace PlayerManager4
                 {
                     // ...return him as a member of the player enumerable
                     yield return p;
+                }
+            }
+        }
+
+        private void SortPlayersQuestion()
+        {
+            while (true)
+            {
+                // Ask the user if he wants to sort by score
+                Console.Write("Sort by score? (y/n) ");
+                string answer = Console.ReadLine();
+
+                // If the user wants to sort by score...
+                if (answer == "y")
+                {
+                    // ...sort the player list by score
+                    playerList.Sort();
+                    break;
+                }
+                // If the user doesn't want to sort by score...
+                else if (answer == "n")
+                {
+                    // ...don't sort the player list
+                    break;
+                }
+                // If the user didn't answer with y or n...
+                else
+                {
+                    // ...ask him again
+                    Console.WriteLine("Please answer with y or n");
+                }
+
+                // Ask the user if he wants to sort by name in alphabetical order
+                Console.Write("Sort by name? (y/n) ");
+                answer = Console.ReadLine();
+
+                // If the user wants to sort by name...
+                if (answer == "y")
+                {
+                    // ...sort the player list by name
+                    playerList.Sort(new CompareByName(true));
+                    break;
+                }
+                // If the user doesn't want to sort by name...
+                else if (answer == "n")
+                {
+                    // ...don't sort the player list
+                    break;
+                }
+                // If the user didn't answer with y or n...
+                else
+                {
+                    // ...ask him again
+                    Console.WriteLine("Please answer with y or n");
+                }
+
+                // Ask the user if he wants to sort by name in reverse alphabetical order
+                Console.Write("Sort by name in reverse order? (y/n) ");
+                answer = Console.ReadLine();
+
+                // If the user wants to sort by name in reverse order...
+                if (answer == "y")
+                {
+                    // ...sort the player list by name in reverse order
+                    playerList.Sort(new CompareByName(false));
+                    break;
+                }
+                // If the user doesn't want to sort by name in reverse order...
+                else if (answer == "n")
+                {
+                    // ...don't sort the player list
+                    break;
+                }
+                // If the user didn't answer with y or n...
+                else
+                {
+                    // ...ask him again
+                    Console.WriteLine("Please answer with y or n");
                 }
             }
         }
