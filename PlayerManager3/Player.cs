@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PlayerManager3
 {
-    public class Player
+    public class Player : IComparable<Player>
     {
         public string Name { get; }
         public int Score { get; }
@@ -18,7 +18,7 @@ namespace PlayerManager3
             if (other == null)
                 return 1;
 
-            return Score.CompareTo(other.Score);
+            return other.Score - Score;
         }
     }
 }

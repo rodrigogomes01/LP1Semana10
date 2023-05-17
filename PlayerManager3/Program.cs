@@ -49,6 +49,9 @@ namespace PlayerManager3
             // Main program loop
             do
             {
+                // Player list is sorted by score
+                playerList.Sort();
+                
                 // Show menu and get user option
                 ShowMenu();
                 option = Console.ReadLine();
