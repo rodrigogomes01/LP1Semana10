@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace PlayerManager3
 {
     public class Player
@@ -9,6 +12,13 @@ namespace PlayerManager3
         {
             Name = name;
             Score = score;
+        }
+        public int CompareTo(Player other)
+        {
+            if (other == null)
+                return 1;
+
+            return Score.CompareTo(other.Score);
         }
     }
 }
