@@ -64,9 +64,11 @@ namespace PlayerManager4
                         InsertPlayer();
                         break;
                     case "2":
+                        SortPlayersQuestion();
                         ListPlayers(playerList);
                         break;
                     case "3":
+                        SortPlayersQuestion();
                         ListPlayersWithScoreGreaterThan();
                         break;
                     case "4":
