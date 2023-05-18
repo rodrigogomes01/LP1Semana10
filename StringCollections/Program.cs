@@ -40,6 +40,35 @@ namespace StringCollections
             hashSet.Add("four");
             hashSet.Add("five");
             hashSet.Add("five"); // Duplicate element
+
+            // Print the elements of the collections
+            Console.WriteLine("List elements:");
+            foreach (string element in list)
+            {
+                Console.WriteLine(element);
+            }
+
+            Console.WriteLine("\nStack elements:");
+            foreach (string element in stack)
+            {
+                Console.WriteLine(element);
+            }
+
+            Console.WriteLine("\nQueue elements:");
+
+            foreach (string element in queue)
+            {
+                Console.WriteLine(element);
+            }
+
+            Console.WriteLine("\nHashSet elements:");
+
+            foreach (string element in hashSet)
+            {
+                Console.WriteLine(element);
+            }
+
+            Console.ReadKey();
         }
     }
 }
