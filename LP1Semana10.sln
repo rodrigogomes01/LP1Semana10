@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManager4", "PlayerMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCollections", "StringCollections\StringCollections.csproj", "{D054B308-7E2E-4CEA-890C-B21764BD268C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamePlayer", "SamePlayer\SamePlayer.csproj", "{46C06952-D515-45AA-916C-5F83759177C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{D054B308-7E2E-4CEA-890C-B21764BD268C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D054B308-7E2E-4CEA-890C-B21764BD268C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D054B308-7E2E-4CEA-890C-B21764BD268C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C06952-D515-45AA-916C-5F83759177C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C06952-D515-45AA-916C-5F83759177C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C06952-D515-45AA-916C-5F83759177C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C06952-D515-45AA-916C-5F83759177C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
