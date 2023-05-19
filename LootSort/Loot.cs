@@ -6,6 +6,12 @@ namespace LootSort
     /// </summary>
     public class Loot
     {
+        public override int GetHashCode() =>
+            Kind.GetHashCode() ^ Description.GetHashCode() ^ Value.GetHashCode();
+
+        public override bool Equals(object obj) =>
+            obj is Loot loot && loot.Kind == Kind && loot.Description == Description && loot.Value == Value;
+            
         /// <summary>Type of loot.</summary>
         public LootType Kind { get; }
 
