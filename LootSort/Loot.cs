@@ -24,16 +24,16 @@ namespace LootSort
             // Compare the loot types.
             int result = Kind.CompareTo(other.Kind);
 
-            // If the loot types are equal, compare the loot descriptions.
+            // If the loot types are equal, compare the loot values.
+            if (result == 0)
+            {
+                result = Description.CompareTo(other.Value);
+            }
+
+            // If the loot types and values are equal, compare the loot descriptions.
             if (result == 0)
             {
                 result = Description.CompareTo(other.Description);
-            }
-
-            // If the loot descriptions are equal, compare the loot values.
-            if (result == 0)
-            {
-                result = Value.CompareTo(other.Value);
             }
 
             return result;
